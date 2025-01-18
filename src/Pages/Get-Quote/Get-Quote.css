@@ -1,0 +1,61 @@
+/* hero */
+.get-quote .hero {
+    position: relative;
+    height: 98vh;
+    background-color: rgba(60, 82, 80, 0.5);
+    background-image: url(../../Assets/Images/Get-Quote\ Hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    background-blend-mode: darken;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main column */
+.get-quote .main-column {
+    column-gap: unset;
+}
+
+/* maine-info */
+.get-quote .main-info {
+    padding: 90px 30px 90px 6%;
+    background-color: var(--bg-color);
+    row-gap: 35px;
+}
+
+.get-quote .main-info .subline {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.get-quote .main-info .title-sm {
+    font-size: 16px;
+}
+
+/* main content */
+.get-quote .main-content {
+    padding: 0 2%;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width:1024px) {
+    .get-quote .form-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .get-quote .main-info {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

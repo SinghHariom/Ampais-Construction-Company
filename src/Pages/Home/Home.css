@@ -1,0 +1,26 @@
+/* hero */
+.home .hero {
+    position: relative;
+    height: 98vh;
+    background-color: rgba(24, 38, 38, 0.5);
+    background-image: url(../../Assets/Images/Landing-Page-Hero.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    background-blend-mode: darken;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* parallax */
+.home .parallax .semicircular::before, 
+.home .parallax .semicircular::after {
+    background-color: var(--bg-color);
+}

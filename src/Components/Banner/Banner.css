@@ -1,0 +1,132 @@
+/* General container and row styling */
+.banner-faq-slider-wrap {
+    background-color: #f9f9f9; /* Optional background color */
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Row styling to ensure proper spacing and alignment */
+  .row.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Styling for the carousel container */
+  .banner-faq-slider-dynamic-wrap {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Styling for each item inside the carousel */
+  .bfsw__item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Text styling for FAQ questions */
+  .bfsw__item p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the link section on the right */
+  .bfsw__faq_link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+  /* Link button styling */
+  .bfsw__faq_link a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff; /* Change to your preferred link color */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .bfsw__faq_link a:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
+  
+  /* Styling for slick carousel dots (if enabled) */
+  .slick-dots {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #0056b3;
+  }
+  
+  /* Styling for slick carousel arrows (next/prev) */
+  .slick-prev, .slick-next {
+    font-size: 24px;
+    color: #007bff;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Add responsiveness to the carousel */
+  @media (max-width: 768px) {
+    .row.d-flex {
+      flex-direction: column;
+    }
+  
+    .bfsw__faq_link {
+      padding-top: 20px;
+    }
+  }
+  
+/*.banner-faq-slider-wrap {
+position: relative;
+bottom: 0;
+left: 0;
+width: 100%;
+background: rgb(255,255,255);
+box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+backdrop-filter: blur(5px);
+margin-bottom: 30px;
+padding: 40px 20px 60px;
+background-color: var(--primary-color);
+}
+
+.owl-carousel, .owl-carousel.owl-loaded {
+display: block;
+}
+
+.owl-carousel{
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}*/

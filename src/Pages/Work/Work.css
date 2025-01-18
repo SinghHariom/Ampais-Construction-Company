@@ -1,0 +1,36 @@
+/* hero */
+.work .hero {
+    position: relative;
+    height: 98vh;
+    background-color: rgba(60, 82, 80, 0.5);
+    background-image: url(../../Assets/Images/Work-Hero.jpg);
+   /* background-position-y: center;*/
+   background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    background-blend-mode: darken;
+    opacity: 1 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* partners */
+.work .partners {
+    background-color: var(--bg-color);
+    padding-bottom: 0;
+}
+
+.work .partners .semicircular::after {
+    display: none;
+}
+
+/* call to action form */
+.work .call-to-action-form {
+    background-image: url(../../Assets/Images/Call-To-Action-Form-Hero.png);
+}
