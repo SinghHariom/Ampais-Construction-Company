@@ -6,7 +6,7 @@ import Modal from '../Modal/Modal';
 import './ImgShadow.css';
 
 function ImgShadow(props) {
-    const {image,alt,link,title,categories} = props;
+    const {image,alt,title,categories} = props;
 
     const [show , setShow] = useState();
 
@@ -20,15 +20,7 @@ function ImgShadow(props) {
                 <img src={image} alt={alt}/>
 
                 <nav className='img-shadow'>
-                    <div>
-                        <button>
-                            <Link to={link} className='shadow-btn icon-link'></Link>
-                        </button>
-                        <button className='shadow-btn icon-search' onClick={clickHandler}>
-                        </button>
-                    </div>
-
-                    <h4 className='title-sm'><Link to={link}>{title}</Link></h4>
+                    <h4 className='title-sm'>{title}</h4>
 
                     <div className='title-sm'>
                         {categories.map((category , index) => {
@@ -42,8 +34,6 @@ function ImgShadow(props) {
                             );
                         })}
                     </div>
-
-                    <Link to={link} className='cover'></Link>
                 </nav>
             </div>
             {/* modal */}

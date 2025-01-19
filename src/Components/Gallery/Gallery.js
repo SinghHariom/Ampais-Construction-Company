@@ -12,52 +12,46 @@ const data = [
     {
       id: 1,
       image: Project01,
-      alt: 'Basket Ball Court',
-      link: '/project01',
-      title: 'Jaipur Basket Ball Court',
+      alt: 'Football Ground',
+      title: 'Football Ground',
       categories: ['Sports Construction']
     },
   
     {
       id: 2,
       image: Project02,
-      alt: 'Cinder Track',
-      link: '/project02',
-      title: 'Gwalior Cinder Track',
+      alt: 'Race Track',
+      title: 'Race Track',
       categories: ['Sports Construction']
     },
     
     {
       id: 3,
       image: Project03,
-      alt: 'DPS Ujjain',
-      link: '/project03',
-      title: 'DPS Ujjain',
+      alt: 'BadMinton Court',
+      title: 'BadMinton Court',
       categories: ['Sports Construction']
     },
     {
       id: 4,
       image: Project04,
-      alt: 'DPS Ujjain',
-      link: '/project04',
-      title: 'DPS Ujjain',
+      alt: 'Baseball Ground',
+      title: 'Baseball Ground',
       categories: ['Sports Construction']
     },
     {
       id: 5,
       image: Project05,
-      alt: 'DPS Ujjain',
-      link: '/project05',
-      title: 'DPS Ujjain',
+      alt: 'MUGA',
+      title: 'Multi User Games Area',
       categories: ['Sports Construction']
     },
     {
       id: 6,
       image: Project06,
       alt: 'DPS Ujjain',
-      link: '/project06',
-      title: 'DPS Ujjain',
-      categories: ['Sports Construction']
+      title: 'Sun Valley Residence',
+      categories: ['Residential Construction']
     }
   ];
   
