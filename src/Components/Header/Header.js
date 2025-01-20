@@ -71,6 +71,7 @@ function Header() {
     show.menu ? setShow({...show , menu: false}) : setShow({...show , menu: true});
   }
   // show/hide submenu
+  // eslint-disable-next-line
   const subMenuHandler = ()=>{
     show.subMenu ? setShow({...show , subMenu: false}) : setShow({...show , subMenu: true});
   }

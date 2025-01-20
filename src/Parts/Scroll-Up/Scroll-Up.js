@@ -14,6 +14,7 @@ function ScrollUp() {
   });
 
   return (
+    // eslint-disable-next-line
     <a href='#' className={`scroll-up-page icon-up ${(show ? '' : 'hide')}`}></a>
   );
 }

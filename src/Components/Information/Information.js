@@ -6,7 +6,7 @@ const data = [
   {
     id: 1,
     icon: 'icon-travel',
-    number: '3534',
+    number: '350',
     title: 'planning applications'
   },
   
@@ -27,7 +27,7 @@ const data = [
   {
     id: 4,
     icon: 'icon-globe',
-    number: '19',
+    number: '9',
     title: 'National offices'
   }
 ];

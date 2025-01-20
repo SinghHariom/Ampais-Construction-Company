@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 
 function useTabTitle(pageName) {
-    const [title , setTitle] = useState('Ampais Construction');
-    
-    useEffect(()=>{
-        setTitle(`${pageName} - ${title}`);
-    },[]);
+    const [title, setTitle] = useState('Ampais Construction');
 
-    window.document.title = title;
+    useEffect(() => {
+        setTitle(prevTitle => `${pageName} - ${prevTitle}`);
+    }, [pageName]);
+
+    useEffect(() => {
+        window.document.title = title;
+    }, [title]);
 }
 
 export default useTabTitle;
