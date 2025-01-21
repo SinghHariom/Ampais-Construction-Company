@@ -38,3 +38,38 @@
     background-color: #e4405f; /* Instagram pink */
   }
   
+  @media (max-width: 768px) {
+    .icon.phone {
+      background-color: #39ef4b; /* WhatsApp green */
+    }
+    
+    .icon.whatsapp {
+      background-color: #39ef4b; /* WhatsApp green */
+    }
+    
+    .icon.instagram {
+      background-color: #39ef4b; /* Instagram pink */
+    }
+  
+    .icon.email {
+      background-color: #39ef4b; 
+    }
+}
+
+@media (max-width: 600px) {
+  .icon.phone {
+    background-color: #39ef4b; /* WhatsApp green */
+  }
+  
+  .icon.whatsapp {
+    background-color: #39ef4b; /* WhatsApp green */
+  }
+  
+  .icon.instagram {
+    background-color: #39ef4b; /* Instagram pink */
+  }
+
+  .icon.email {
+    background-color: #39ef4b; 
+  }
+}

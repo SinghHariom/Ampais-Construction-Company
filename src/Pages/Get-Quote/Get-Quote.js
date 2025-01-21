@@ -17,7 +17,7 @@ const data = [
     id: 1,
     title: 'corporate office',
     address: ['House No. 13, 118 Bansi Vihar, Sagartal Gwalior Madhya Pradesh - 474008'],
-    telephone: '+91 9340524985/7697586499',
+    telephone: '+919340524985',
     email: 'ampaisconstruction@gmail.com',
     date: 'Mon - Sat . 9.00 - 18.00',
   }
