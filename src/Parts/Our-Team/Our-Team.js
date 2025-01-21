@@ -1,10 +1,10 @@
 // Images
-import AmpaisTeam01 from '../../Assets/Images/Ampais-Team-01.jpg';
-import AmpaisTeam02 from '../../Assets/Images/Ampais-Team-02.jpg';
-import AmpaisTeam03 from '../../Assets/Images/Ampais-Team-03.jpg';
+import AmpaisTeam01 from '../../Assets/Images/AmpaisTeam01.jpeg';
+import AmpaisTeam02 from '../../Assets/Images/AmpaisTeam02.jpeg';
+import AmpaisTeam03 from '../../Assets/Images/AmpaisTeam03.jpeg';
 // Components
 import HedSection from '../../Components/HedSection/HedSection';
-import SocialMedia from '../../Parts/Social-Media/Social-Media';
+//import SocialMedia from '../../Parts/Social-Media/Social-Media';
 // Css
 import './Our-Team.css';
 
@@ -14,33 +14,25 @@ const data = [
     id: 1,
     image: AmpaisTeam01,
     alt: 'Ampais Team',
-    name: 'george johnson',
-    job: 'commercial director',
-    facebook: '',
-    twitter: '',
-    instagram: ''
+    name: 'Er. Sakeel khan ( B.E. Civil )',
+    job: 'Director'
   },
 
   {
     id: 2,
-    image: AmpaisTeam03,
+    image: AmpaisTeam02,
     alt: 'Ampais Team',
-    name: 'simon taylor',
-    job: 'creative director',
-    facebook: '',
-    twitter: '',
-    instagram: ''
+    name: 'Munawer Ali (M tech Structure engineer)',
+    job: 'Executive Engineer'
+    
   },
   
   {
     id: 3,
-    image: AmpaisTeam02,
+    image: AmpaisTeam03,
     alt: 'Ampais Team',
-    name: 'elizabeth berkley',
-    job: 'operations director',
-    facebook: '',
-    twitter: '',
-    instagram: ''
+    name: 'Arvind Wanshkar',
+    job: 'Site incharge'
   },
 ];
 
@@ -58,7 +50,7 @@ function OurTeam() {
 
         <div className='parent-items'>
           {data.map(item => {
-            const {id,image,alt,name,job,facebook,twitter,instagram} = item;
+            const {id,image,alt,name,job} = item;
 
             return (
               <section key={id} className='Person-Card'>
@@ -68,30 +60,9 @@ function OurTeam() {
 
                 <div className='card-content'>
                   <h3 className='title-md'>{name}</h3>
-                  <h3 className='title-md'>{job}</h3>
+                  <h3 className='title-md job-title'>{job}</h3>
 
-                  <nav className='card-social'>
-                    <SocialMedia
-                      url={`https://m.facebook.com/${facebook}`}
-                      className='card-social-icon'
-                      tooltip='facebook'
-                      icon='icon-facebook'
-                    />
-                    
-                    <SocialMedia
-                      url={`https://www.Twitter.com/${twitter}`}
-                      className='card-social-icon'
-                      tooltip='twitter'
-                      icon='icon-twitter'
-                    />
-                    
-                    <SocialMedia
-                      url={`https://www.instagram.com/${instagram}`}
-                      className='card-social-icon'
-                      tooltip='instagram'
-                      icon='icon-instagram'
-                    />
-                  </nav>
+                  
                 </div>
               </section>
             );

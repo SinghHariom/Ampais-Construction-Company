@@ -7,6 +7,10 @@
     display: none;
 }
 
+.job-title {
+    font-weight: bolder;
+}
+
 .Person-Card {
     background-color: #fff;
     display: flex;

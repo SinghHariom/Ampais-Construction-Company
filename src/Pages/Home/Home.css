@@ -2,7 +2,7 @@
 .home .hero {
     position: relative;
     height: 98vh;
-    background-color: rgba(24, 38, 38, 0.5);
+    background-color: rgba(65, 76, 79, 0.5);
     background-image: url(../../Assets/Images/Landing-Page-Hero.png);
     background-repeat: no-repeat;
     background-position: center center;

@@ -9,6 +9,9 @@ import SubHero from '../../Parts/SubHero/SubHero';
 import CallToAction from '../../Parts/Call-To-Action/Call-To-Action';
 import useTabTitle from '../../Hooks/useTabTitle';
 import useCurrentPage from '../../Hooks/useCurrentPage';
+
+//import Banner from '../../Components/Banner/Banner';
+
 // Css
 import './Home.css';
 function Home() {
@@ -21,7 +24,7 @@ function Home() {
     <>
       <Loader/>
       <main id='main' className='home'>
-        <Hero title='Welcome to Ampais' content='We commit to society to develop smart, eco-friendly, and sustainable infrastructure.'>
+        <Hero title='Welcome to Ampais' content='We commit to society to develop smart, eco-friendly, and sustainable sports and residential infrastructure.'>
           <HeroBtn/>
         </Hero>
         <SubHero/>

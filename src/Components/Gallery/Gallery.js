@@ -61,7 +61,7 @@ const data = [
         <div className='container'>
           <HedSection
             title='explore recent work'
-            content='At Ampais Construction, we take pride in the exceptional work we do. Our projects reflect our commitment to quality, innovation, and customer satisfaction. We invite you to explore some of our recent accomplishments and see how we’ve helped our clients achieve their goals.'
+            content='At Ampais Construction, we take pride in the exceptional work we do. Our projects reflect our commitment to quality, innovation, and customer satisfaction. We specialize in FIFA-approved soccer pitches and artificial grass football grounds, positioning ourselves as leading suppliers and manufacturers of high-quality turf. As versatile builders and contractors, we excel in creating multi-sport surfaces, including badminton courts. Our offerings include Astro Turf and garden grass at competitive prices. We provide comprehensive services in turf construction and installation, with clear and transparent cost structures.'
           />
   
           <div className='parent-items'>
