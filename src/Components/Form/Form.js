@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 // Css
 import './Form.css';
 
@@ -8,35 +9,56 @@ function Form() {
         lastName: '',
         email: '',
         phoneNumber: '',
-        massage: '',
+        message: '',
         subject: ''
     });
 
     const [valid, setValid] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setData({ ...data, [name]: value });
+    };
 
     const submitHandler = (e) => {
         e.preventDefault();
         setValid(true);
 
-        // Simulate form submission and display success message
-        setTimeout(() => {
-            setSuccessMessage('Form submitted successfully! If You want immediate response please call!');
-            setData({
-                firstName: '',
-                lastName: '',
-                email: '',
-                phoneNumber: '',
-                massage: '',
-                subject: ''
+        // Define your EmailJS service, template, and user ID
+        const serviceID = 'service_8o2vaam';
+        const templateID = 'template_jwqjw8o';
+        const userID = 'Ys06itOWI8uoJegKO';
+
+        const templateParams = {
+            firstName: data.firstName,
+            lastName: data.lastName,
+            email: data.email,
+            phoneNumber: data.phoneNumber,
+            message: data.message,
+            subject: data.subject,
+        };
+
+        emailjs.send(serviceID, templateID, templateParams, userID)
+            .then(() => {
+                setSuccessMessage('Email sent successfully!');
+                setData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    phoneNumber: '',
+                    message: '',
+                    subject: ''
+                });
+                setValid(false); // Reset the form validation
+            })
+            .catch(() => {
+                setSuccessMessage('Failed to send email.');
             });
-            setValid(false); // Reset the form validation
-        }, 500); // Simulate a delay for form submission
     };
 
     return (
         <div>
-            <form action='undefined' method='post' onSubmit={submitHandler}>
+            <form onSubmit={submitHandler}>
                 <div className='form-group'>
                     <label htmlFor='first-name'>first name <abbr title='required'>*</abbr></label>
                     <input
@@ -73,14 +95,21 @@ function Form() {
                 </div>
 
                 <div className='form-group'>
-                    <label htmlFor='phone-number'>phone number</label>
+                    <label htmlFor='phone-number'>Phone Number</label>
                     <input
                         type='tel'
                         id='phone-number'
+                        name="phoneNumber"
                         className='form-item'
                         value={data.phoneNumber}
-                        onChange={e => setData({ ...data, phoneNumber: e.target.value.trim().toLowerCase() })}
+                        onChange={(e) => {
+                            const phone = e.target.value;
+                            if (/^\d*$/.test(phone)) {
+                                handleInputChange(e);
+                            }
+                        }}
                     />
+                
                 </div>
 
                 <div className='form-group'>
@@ -88,24 +117,25 @@ function Form() {
                     <input
                         type='text'
                         id='subject'
+                        name="subject"
                         className='form-item'
                         value={data.subject}
-                        onChange={e => setData({ ...data, subject: e.target.value.trim().toLowerCase() })}
+                        onChange={handleInputChange}
                     />
                 </div>
 
                 <div className='form-group'>
-                    <label htmlFor='massage'>how can we help? <abbr title='required'>*</abbr></label>
+                    <label htmlFor='message'>How can we help? <abbr title='required'>*</abbr></label>
                     <textarea
-                        id='massage'
+                        id='message'
+                        name="message"
                         rows='5'
                         className={`form-item ${valid && 'check-valid'}`}
-                        value={data.massage}
+                        value={data.message}
                         required
-                        onChange={e => setData({ ...data, massage: e.target.value.trim().toLowerCase() })}
+                        onChange={handleInputChange}
                     ></textarea>
                 </div>
-
                 <input
                     type='submit'
                     className='btn btn-primary'
